@@ -244,8 +244,6 @@ html, body {
   border-radius: var(--radius-square) var(--radius-square) 0 0;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
-  position: relative;
-  bottom: -2px;
 }
 
 .tabs button:hover {
@@ -253,10 +251,17 @@ html, body {
   color: var(--color-anthracite);
 }
 
+.tabs button:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
 .tabs button[aria-selected='true'] {
   background: var(--color-anthracite);
   border-color: var(--color-anthracite);
   color: var(--color-white);
+  position: relative;
+  bottom: -2px;
 }
 
 .pn {
