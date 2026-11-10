@@ -176,6 +176,35 @@ html, body {
   font-weight: 600;
 }
 
+/* Resumen métrico en texto limpio (sin botones falsos) */
+.hero-meta-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+  font-size: 14.5px;
+  color: #D4D4D4;
+}
+
+.hero-meta-summary .meta-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.hero-meta-summary .meta-item b {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hero-meta-summary .meta-sep {
+  color: #888888;
+  font-size: 16px;
+  line-height: 1;
+}
+
 /* CONCLUSIÓN PRINCIPAL / CALLOUT */
 .callout-box {
   background: var(--color-card-bg);
